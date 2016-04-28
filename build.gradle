@@ -3,7 +3,15 @@ apply plugin: 'cpp'
 
 model {
   components {
-    main(NativeExecutableSpec) {}
+    main(NativeExecutableSpec) {
+      sources{
+        cpp {
+          source {
+            srcDir "cpp/"
+          }
+        }
+      }
+    }
   }
 }
 
