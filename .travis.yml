@@ -2,4 +2,4 @@ sudo: required
 language: cpp
 
 script:
-  - ./gradlew build
+  - ./bash gradlew build --stacktrace
