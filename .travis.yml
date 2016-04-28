@@ -1,5 +1,16 @@
-sudo: required
 language: cpp
 
+env:
+  - TERM=dumb
+
+cache:
+  directories:
+    - $HOME/.gradle
+
+before_install:
+  - chmod +x gradlew
+
 script:
-  - ./bash gradlew build --stacktrace
+  - ./gradlew build --stacktrace
+
+install: true
